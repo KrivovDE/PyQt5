@@ -255,7 +255,6 @@ class Ui_MainWindow(object):
 
                 error.exec_()
                 self.is_eq = True
-
         else:
             error = QMessageBox()
             error.setWindowTitle('Ошибка')
