@@ -284,7 +284,7 @@ class UiMainWindow(object):
             except Exception:
                 error = QMessageBox()
                 error.setWindowTitle('ZeroDivisionError')
-                error.setText('Это недопустимо"')
+                error.setText('Это непозволительно"')
                 error.setIcon(QMessageBox.Warning)
                 error.setStandardButtons(QMessageBox.Ok)
                 error.exec_()
