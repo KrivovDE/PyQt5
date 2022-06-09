@@ -295,7 +295,7 @@ class UiMainWindow(object):
         else:
             error = QMessageBox()
             error.setWindowTitle('Ошибка')
-            error.setText('Сейчас это действие выполнить нельзя')
+            error.setText('Это действие выполнить нельзя')
             error.setIcon(QMessageBox.Warning)
             error.setStandardButtons(QMessageBox.Ok)
             error.exec_()

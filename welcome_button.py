@@ -82,6 +82,7 @@ class Window(QMainWindow):
 
 
 if __name__ == '__main__':
+
     app = QApplication()
     window = Window()
     window.show()
