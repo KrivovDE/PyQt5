@@ -256,7 +256,7 @@ class UiMainWindow(object):
 
     def write_number(self, number):
 
-        # поверяем если в label_result - 0 или предидущий результат,
+        # поверяем если в label_result - 0 или предыдущий результат,
         # заполняем label_result аргументом  number из write_number
         if self.label_result.text() == '0' or self.is_eq:
             self.label_result.setText(number)
@@ -265,7 +265,6 @@ class UiMainWindow(object):
         # выводим на label_result то, что там уже есть и принимаемый
         # write_number аргумент (number)
         # Работа происходит со строковыми объектами.
-
         else:
             self.label_result.setText(self.label_result.text() + number)
 
@@ -277,7 +276,7 @@ class UiMainWindow(object):
             try:
                 # eval - производит математические операциии со str-объектами
                 res = eval(self.label_result.text())
-                self.label_result.setText('РЕЗУЛЬТАТ: ' + str(res))
+                self.label_result.setText(f'{self.label_result.text()} = {str(res)}')
                 self.is_eq = True
 
             # обработка именно математических ошибок пользователя
